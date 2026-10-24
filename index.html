@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+          content="Organize daily goals, habits, schedules and notes in one place.">
+    <title>Digital Life Tracker</title>
+</head>
+
+<body>
+
+    <header id="home">
+        <h1>Digital Life Tracker</h1>
+        <p>Organize your day. Build better habits. Track your growth.</p>
+
+        <nav aria-label="Main navigation">
+            <a href="#goals">Daily Goals</a> |
+            <a href="#habits">Habits</a> |
+            <a href="#schedule">Schedule</a> |
+            <a href="#links">Quick Links</a> |
+            <a href="#notes">Notes</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="welcome">
+            <h2>Your Personal Dashboard</h2>
+            <p>Small steps every day lead to big achievements.</p>
+
+            <label for="today">Today's Date:</label>
+            <input type="date" id="today" name="today">
+        </section>
+
+        <hr>
+
+        <section id="goals">
+            <h2>My Daily Goals</h2>
+            <p>Check the goals you complete today.</p>
+
+            <ul>
+                <li>
+                    <input type="checkbox" id="goal1">
+                    <label for="goal1">Practise Python programming</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="goal2">
+                    <label for="goal2">Learn HTML5 or CSS3</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="goal3">
+                    <label for="goal3">Solve coding interview questions</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="goal4">
+                    <label for="goal4">Apply for a job</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="goal5">
+                    <label for="goal5">Read for 20 minutes</label>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="habits">
+            <h2>Habit Tracker</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Habit</th>
+                        <th>Morning</th>
+                        <th>Afternoon</th>
+                        <th>Evening</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Drink Water</th>
+                        <td><input type="checkbox" aria-label="Morning water"></td>
+                        <td><input type="checkbox" aria-label="Afternoon water"></td>
+                        <td><input type="checkbox" aria-label="Evening water"></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Exercise</th>
+                        <td><input type="checkbox" aria-label="Morning exercise"></td>
+                        <td><input type="checkbox" aria-label="Afternoon exercise"></td>
+                        <td><input type="checkbox" aria-label="Evening exercise"></td>
+                    </tr>
+
+                    <tr>
+                        <th scope="row">Study</th>
+                        <td><input type="checkbox" aria-label="Morning study"></td>
+                        <td><input type="checkbox" aria-label="Afternoon study"></td>
+                        <td><input type="checkbox" aria-label="Evening study"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="schedule">
+            <h2>My Daily Schedule</h2>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Time</th>
+                        <th>Activity</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>8:00 AM</td>
+                        <td>Morning routine</td>
+                        <td>Planned</td>
+                    </tr>
+                    <tr>
+                        <td>10:00 AM</td>
+                        <td>Programming practice</td>
+                        <td>Planned</td>
+                    </tr>
+                    <tr>
+                        <td>2:00 PM</td>
+                        <td>Web development</td>
+                        <td>Planned</td>
+                    </tr>
+                    <tr>
+                        <td>5:00 PM</td>
+                        <td>Interview preparation</td>
+                        <td>Planned</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <section id="links">
+            <h2>Quick Links</h2>
+
+            <ul>
+                <li>
+                    <a href="https://github.com/" target="_blank"
+                       rel="noopener noreferrer">GitHub</a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/" target="_blank"
+                       rel="noopener noreferrer">LinkedIn</a>
+                </li>
+                <li>
+                    <a href="https://www.w3schools.com/" target="_blank"
+                       rel="noopener noreferrer">Web Development Learning</a>
+                </li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <section id="notes">
+            <h2>Personal Notes</h2>
+
+            <form action="#" method="get">
+                <label for="note-title">Note Title:</label>
+                <input type="text" id="note-title" name="title"
+                       placeholder="Enter note title" required>
+                <br><br>
+
+                <label for="note-content">Your Note:</label>
+                <br>
+                <textarea id="note-content" name="note"
+                          rows="6" cols="40"
+                          placeholder="Write your thoughts or reminders..."
+                          required></textarea>
+                <br><br>
+
+                <button type="submit">Submit Note</button>
+                <button type="reset">Clear Note</button>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <footer>
+        <p>Built with HTML5 | Digital Life Tracker</p>
+        <a href="#home">Back to Top</a>
+    </footer>
+
+</body>
+</html>
